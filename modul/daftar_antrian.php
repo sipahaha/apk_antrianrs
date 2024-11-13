@@ -1,12 +1,12 @@
 <?php 
 include '../lib/koneksi.php'; 
  
-// Menyiapkan query untuk mengambil data antrian 
+
 $sql = "SELECT * FROM tb_antrian ORDER BY id DESC"; 
 $stmt = $conn->prepare($sql); 
 $stmt->execute(); // Eksekusi query 
  
-// Menampilkan hasil query 
+
 echo "<h2>Daftar Antrian Pasien</h2>"; 
 echo "<table border='1'> 
         <tr> 
@@ -18,7 +18,6 @@ echo "<table border='1'>
         <th>Aksi</th> 
         </tr>"; 
  
-// Ambil semua data hasil query 
 $antrian = $stmt->fetchAll(PDO::FETCH_ASSOC); 
  
 if (count($antrian) > 0) { 

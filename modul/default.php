@@ -1,3 +1,10 @@
+<?php
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +17,7 @@
 
         <style>
             h2{
-                margin-top: 100px;
+                margin-top: 90px;
             }
             .card{
                 width: 100px;
@@ -25,12 +32,17 @@
             .btn-primary{
                 margin-top: 15px;
             }
+            .btn-secondary{
+                margin-left: 10px;
+                margin-top: 10px;
+            }
         </style>
 </head>
 
 <body>
+<a href="?page=keluar"><button type="button" class="btn btn-secondary">Logout</button></a>
     <center>
-        <h2>Welcome !!</h2>
+        <h2> <?php echo "Welcome " . htmlspecialchars($_SESSION['username']);?>!!</h2>
     </center>
     <div class="container">
         <center><div class="row" style ="margin-top: 75px;">

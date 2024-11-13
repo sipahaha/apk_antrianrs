@@ -12,11 +12,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bindParam(':nomor_antrian', $nomor_antrian); 
     $stmt->bindParam(':waktu_kedatangan', $waktu_kedatangan);
     
-    // Eksekusi query
     if ($stmt->execute()) { 
         echo "Data antrian berhasil ditambahkan!"; 
         header("Location: daftar_antrian.php");
-        exit(); // Pastikan untuk menghentikan script setelah redirect
+        exit(); 
     } else { 
         echo "Error: Gagal menambahkan data."; 
     } 
