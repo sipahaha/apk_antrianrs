@@ -11,7 +11,7 @@ if (isset($_GET['id'])) {
         header("Location: daftar_antrian.php");
         exit();
     } else { 
-        echo "Error: " . $stmt->errorInfo()[2]; 
+        echo "Error: " . $stmt->error;
     } 
 } else {
     echo "ID tidak ditemukan.";
