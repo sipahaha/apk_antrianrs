@@ -1,5 +1,5 @@
 <?php 
-include '../lib/koneksi.php';
+include "../lib/koneksi.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") { 
     $nama_pasien = $_POST['nama_pasien']; 
@@ -36,12 +36,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             padding: 20px;
         }
         .container {
-            max-width: 400px;
+            width: 400px;
             margin: auto;
             background: white;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 100px;
         }
         h2 {
             text-align: center;
@@ -51,6 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             display: block;
             margin: 10px 0 5px;
             color: #555;
+            margin-left: 15px;
         }
         input[type="text"],
         input[type="number"],
@@ -59,7 +61,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             padding: 10px;
             margin-bottom: 15px;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 4px; 
+            width: 350px;
         }
         input[type="submit"] {
             width: 100%;
@@ -82,13 +85,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <h2>Tambah Antrian</h2>
     <form method="POST" action="tambah_antrian.php">
         <label for="nama_pasien">Nama Pasien:</label>
-        <input type="text" id="nama_pasien" name="nama_pasien" required>
+        <center><input type="text" id="nama_pasien" name="nama_pasien" required></center>
 
         <label for="nomor_antrian">Nomor Antrian:</label>
-        <input type="number" id="nomor_antrian" name="nomor_antrian" required>
+        <center><input type="number" id="nomor_antrian" name="nomor_antrian" required></center>
 
         <label for="waktu_kedatangan">Waktu Kedatangan:</label>
-        <input type="datetime-local" id="waktu_kedatangan" name="waktu_kedatangan" required>
+        <center><input type="datetime-local" id="waktu_kedatangan" name="waktu_kedatangan" required></center>
 
         <input type="submit" value="Tambah Antrian">
     </form>

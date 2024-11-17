@@ -21,6 +21,9 @@ if (!isset($_SESSION['user_id'])) {
 </head>
 
 <body>
+    <?php
+    include "modul/nav.php";
+    ?>
  
     <?php
         $page = isset($_GET['page'])?$_GET['page']:null;
@@ -46,6 +49,8 @@ if (!isset($_SESSION['user_id'])) {
             }
             
              ?>
+
+  
 </body>
 
 </html>
