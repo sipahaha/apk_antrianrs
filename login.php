@@ -36,6 +36,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Login</title>
+    <style>
+        .btn{
+            background-color: #4cae4c;
+        }
+    </style>
 </head>
 
 <body>
@@ -63,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     <!-- Submit button -->
                     <center> <button type="submit" data-mdb-button-init data-mdb-ripple-init
-                        class="btn btn-primary btn-block mb-4">Login</button></center>
+                        class="btn btn-block mb-4  text-light">Login</button></center>
 
                     <!-- Register buttons -->
                     <div class="text-center">

@@ -18,7 +18,7 @@
 <body>
 
     <!-- navigasi -->
-    <nav class="navbar fixed-top">
+    <nav class="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#" style="color: white;">Antrian RS Bina Sehat</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"

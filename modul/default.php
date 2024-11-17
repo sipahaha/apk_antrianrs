@@ -17,7 +17,7 @@ if (!isset($_SESSION['username'])) {
 
     <style>
     h2 {
-        margin-top: 50px;
+        margin-top: 30px;
     }
    
     .card {
