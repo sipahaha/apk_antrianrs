@@ -1,0 +1,1 @@
+Saya Kurang paham kapan kita harus menggunakan bind param pada statement
